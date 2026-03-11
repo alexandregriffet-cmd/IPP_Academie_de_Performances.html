@@ -292,7 +292,7 @@ function renderReport(){
 
 document.addEventListener('DOMContentLoaded', ()=>{
   if(!questions.length || !Object.keys(profiles).length){document.getElementById('app').innerHTML='<div class="notice"><strong>Erreur de chargement.</strong><br>Les données du test ne sont pas disponibles dans cette page. Réessaie avec le fichier fourni ou GitHub Pages.</div>'; return;}
-  document.getElementById('startBtn').onclick=()=>{ startTime=Date.now(); current=0; answers=[]; show('screen-question'); window.scrollTo({top:0,behavior:"instant"}); renderQuestion(); };
+  document.getElementById('startBtn').onclick=()=>{ startTime=Date.now(); current=0; answers=[]; show('screen-question'); window.scrollTo({top:0,behavior:"auto"}); renderQuestion(); };
   document.getElementById('toStressBtn').onclick=()=>{ if(validateScale('phase', phaseItems)) renderStress(); };
   document.getElementById('finishBtn').onclick=()=>{ if(validateScale('stress', stressItems)) renderReport(); };
 });
