@@ -1,0 +1,1 @@
+Ouvrir index.html ou publier tel quel sur GitHub Pages. Aucun autre fichier requis.
